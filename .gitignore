@@ -3,3 +3,15 @@
 ################################################################################
 
 /.vs
+/car-web-api/obj
+/packages
+/src/Tensech.CarApi.Common/obj
+/src/Tensech.CarApi.Core/bin
+/src/Tensech.CarApi.Core/obj
+/src/Tensech.CarApi.Services/bin
+/src/Tensech.CarApi.Services/obj
+/src/Tensech.CarApi.Store/bin
+/src/Tensech.CarApi.Store/obj
+/src/Tensech.CarApi.Web/bin
+/src/Tensech.CarApi.Web/obj
+/src/Tensech.CarApi.Common/bin

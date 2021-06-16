@@ -1,0 +1,32 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:62480",
+      "sslPort": 0
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/car/v1.0/cars",
+      "environmentVariables": {
+        "AWS_LAMBDA_FUNCTION_NAME": "Development",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "car_web_api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/car/v1.0/cars",
+      "environmentVariables": {
+        "AWS_LAMBDA_FUNCTION_NAME": "Development",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}
