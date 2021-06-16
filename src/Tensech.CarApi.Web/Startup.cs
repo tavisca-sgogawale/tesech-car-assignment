@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CommonServiceLocator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -50,7 +49,6 @@ namespace Tensech.CarApi.Web
 
             // ExceptionPolicy.Configure(container.GetInstance<IErrorHandler>());
             var container = SetupContainer(services);
-            SetserviceLocator(container);
             var serviceProvider = container.GetInstance<IServiceProvider>();
             return serviceProvider;
 
@@ -68,11 +66,7 @@ namespace Tensech.CarApi.Web
             return container;
         }
 
-        private static void SetserviceLocator(Container container)
-        {
-            var serviceLocator = new StructureMapServiceLocator(container);
-            ServiceLocator.SetLocatorProvider(() => serviceLocator);
-        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

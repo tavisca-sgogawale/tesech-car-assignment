@@ -8,7 +8,6 @@ using Tensech.CarApi.Services;
 using StructureMap;
 using Tensech.CarApi.Common;
 using Tensech.CarApi.Store;
-using CommonServiceLocator;
 
 namespace Tensech.CarApi.Web
 {
@@ -19,7 +18,6 @@ namespace Tensech.CarApi.Web
             
             new ConfigurationBuilder();
 
-            For<IServiceLocator>().Use<StructureMapServiceLocator>();
             For<ITokenService>().Use<TokenService>();
             if(KeyStore.Store.StoreName == KeyStore.Store.DynamoDbStoreName)
             {
